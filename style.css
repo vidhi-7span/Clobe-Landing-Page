@@ -1,0 +1,462 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+}
+.container {
+  max-width: 1232px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  /* overflow: hidden; */
+}
+
+/************************************************************************************************ Header Start */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  cursor: pointer;
+  margin: 30px 0;
+}
+.header__nav {
+  margin: 30px 0;
+}
+.header__nav a:hover {
+  font-weight: 600;
+}
+.header__nav_plateform,
+.header__nav_pricing,
+.header__nav_company,
+.header__nav_marketing {
+  text-decoration: none;
+  color: #3d474d;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 24px;
+  cursor: pointer;
+}
+.dropbtn {
+  background-color: white;
+  border: none;
+  text-decoration: none;
+  color: #3d474d;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.header__btn {
+  margin: 30px 0;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown__content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown__content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.header__nav_launguage_btn {
+  text-decoration: none;
+  color: #3d474d;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+.dropbtn__english {
+  background-color: white;
+  border: none;
+  text-decoration: none;
+  color: #3d474d;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-right: 20px;
+  border-right: #d9d9d9 solid 1px;
+  cursor: pointer;
+}
+.header__btn_login {
+  text-decoration: none;
+  color: #3d474d;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: 1s ease-out;
+}
+.header__btn_getstarted {
+  text-decoration: none;
+  color: #3d474d;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  margin-right: 20px;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: 1s ease-out;
+  border: 1px solid #0af;
+}
+.dropdown__content a:hover {
+  background-color: #0af;
+  color: white;
+  transition: 0.5s ease-out;
+  font-weight: 600;
+}
+.dropdown:hover .dropdown__content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  font-weight: 600;
+  cursor: pointer;
+}
+.dropbtn__english:hover {
+  font-weight: 600;
+}
+.header__btn_login:hover {
+  background-color: #0af;
+  color: white;
+}
+.header__btn_getstarted:hover {
+  background-color: #0af;
+  color: white;
+}
+
+/************************************************************************************************* Header End  */
+
+/**************************************************************************************** Banner Section Start */
+.banner {
+  margin: 50px 338px;
+}
+.banner__header {
+  color: #000;
+  text-align: center;
+  font-family: Bagnard;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 68px;
+  letter-spacing: -2px;
+}
+.banner__desc {
+  color: #3d474d;
+  text-align: center;
+  font-family: Noto Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 8px 0 32px 0;
+}
+.banner__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner__btn_getstarted {
+  margin-right: 16px;
+  padding: 14px 44px;
+  border: none;
+  border-radius: 4px;
+  background: #0d0e10;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+}
+.banner__btn_talk {
+  margin-right: 16px;
+  padding: 14px 44px;
+  border-radius: 4px;
+  color: #3d474d;
+  background: none;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  cursor: pointer;
+  border: solid 1px #0af;
+  transition: 1s ease-in-out;
+}
+.banner__btn_getstarted:hover {
+  background-color: white;
+  color: black;
+  border: solid 1px black;
+}
+.banner__btn_talk:hover {
+  background-color: #0af;
+  color: white;
+}
+/****************************************************************************************** Banner Section End */
+
+/************************************************************************************ Companies Section Start  */
+.companies__image {
+  text-align: center;
+  margin: 0 187px;
+}
+.companies__image img {
+  height: 100%;
+  width: 100%;
+}
+.companies__content {
+  margin: 40px 0;
+}
+.companies__content_desc {
+  color: #000;
+  text-align: center;
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.companies__logos {
+  display: flex;
+  justify-content: space-evenly;
+}
+/************************************************************************************** Companies Section End  */
+
+/**************************************************************************************** Career Section Start */
+
+.career {
+  background: #f7f8fc;
+  padding: 60px 0;
+  display: flex;
+  margin-top: 80px;
+}
+.career__inner {
+  display: flex;
+  margin: 0 255px;
+}
+.career__inner_image {
+  width: 422px;
+  height: 443px;
+}
+.career__inner_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 55px;
+}
+.career__inner_label {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.career__inner_header {
+  color: #000;
+  font-family: Bagnard;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 52px;
+  letter-spacing: -2px;
+  max-width: 350px;
+  margin: 15px 0;
+}
+.career__inner_desc {
+  color: #3d474d;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  max-width: 459px;
+}
+
+/****************************************************************************************** Career Section End */
+
+/************************************************************************************* Marketing Section Start */
+.marketing__expert {
+  margin: 80px 400px;
+  text-align: center;
+}
+.marketing__expert_label {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.marketing__expert_header {
+  color: #000;
+  font-family: Bagnard;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 52px;
+  letter-spacing: -2px;
+  margin: 10px 0;
+}
+.marketing__expert_desc {
+  color: #3d474d;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+/*************************************************************************************** Marketing Section End */
+
+/******************************************************************************************************* Media */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+  .banner {
+    margin: 50px 150px;
+  }
+  .career__inner {
+    display: flex;
+    margin: 0 70px;
+  }
+  .marketing__expert {
+    margin: 80px 150px;
+    text-align: center;
+  }
+}
+@media (max-width: 960px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .header__nav {
+    display: none;
+  }
+  .banner {
+    margin: 50px 10px;
+  }
+  .career__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .career__inner_content {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    max-width: 700px;
+  }
+}
+@media (max-width: 430px) {
+  .container {
+    max-width: 430px;
+  }
+  .header__nav_company,
+  .header__btn_getstarted {
+    display: none;
+  }
+  .banner__header {
+    color: #000;
+    text-align: center;
+    font-family: Bagnard;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -2px;
+  }
+  .banner__btn_getstarted {
+    padding: 12px 20px;
+  }
+  .banner__btn_talk {
+    padding: 12px 20px;
+  }
+  .companies__logos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .companies__logos_logo1 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .companies__logos_logo2 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .companies__logos_logo3 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .companies__logos_logo4 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .companies__logos_logo5 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .career__inner_content {
+    padding-left: 0px;
+  }
+  .marketing__expert {
+    margin: 80px 0px;
+    text-align: center;
+  }
+}
+@media (max-width: 380px) {
+  .dropbtn__english {
+    display: none;
+  }.marketing__expert {
+    margin: 80px 0px;
+    text-align: center;
+  }
+}
